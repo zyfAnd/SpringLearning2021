@@ -19,4 +19,8 @@ public class MainConfig {
     Person getPerson(){
         return new Person("Yanfu",18);
     }
+    @Bean(value = "person")
+    Person getPerson01(){
+        return new Person();
+    }
 }

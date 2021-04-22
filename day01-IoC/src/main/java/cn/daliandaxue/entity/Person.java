@@ -11,6 +11,7 @@ public class Person {
     private Integer age;
 
     public Person() {
+        System.out.println("Person init..");
     }
 
     public Person(String name, Integer age) {
