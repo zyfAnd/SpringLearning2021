@@ -7,4 +7,7 @@
         <constructor-arg name="age" value="19" ></constructor-arg>
         <constructor-arg name="name" value="Yanfu"></constructor-arg>
     </bean>
+    <bean id="personService" class="cn.daliandaxue.service.PersonService"></bean>
+    <bean id="personDao" class="cn.daliandaxue.dao.PersonDao"></bean>
+    <bean id="mainConfig" class="cn.daliandaxue.config.MainConfig"></bean>
 </beans>
