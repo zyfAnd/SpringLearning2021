@@ -13,11 +13,12 @@ import org.springframework.context.support.GenericXmlApplicationContext;
  */
 public class App {
     public static void main(String[] args) {
-//        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MainConfig.class);
-        ApplicationContext context = new GenericXmlApplicationContext("bean.xml");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MainConfig.class);
+//        ApplicationContext context = new GenericXmlApplicationContext("bean.xml");
         String[] beanDefinitionNames = context.getBeanDefinitionNames();
         for (String beanName:beanDefinitionNames) {
             System.out.println(beanName);
         }
+        context.destroy();
     }
 }

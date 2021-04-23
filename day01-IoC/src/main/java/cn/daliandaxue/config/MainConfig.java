@@ -1,5 +1,6 @@
 package cn.daliandaxue.config;
 
+import cn.daliandaxue.entity.Car;
 import cn.daliandaxue.entity.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -22,5 +23,9 @@ public class MainConfig {
     @Bean(value = "person")
     Person getPerson01(){
         return new Person();
+    }
+    @Bean(initMethod = "init", destroyMethod = "destory")
+    Car car(){
+        return new Car();
     }
 }
