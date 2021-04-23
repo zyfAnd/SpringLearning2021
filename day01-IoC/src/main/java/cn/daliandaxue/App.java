@@ -19,6 +19,7 @@ public class App {
         for (String beanName:beanDefinitionNames) {
             System.out.println(beanName);
         }
+        //context destroy
         context.destroy();
     }
 }
