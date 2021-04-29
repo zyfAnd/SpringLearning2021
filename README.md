@@ -6,5 +6,8 @@ Mac Idea 快捷键
 2. setter and getter --> control
 3. system.out.println(); --> sout
 4. main method --> psvm 
+5. 类的继承关系 ctrl+H
 
-LifeCycle 
+Spring Core
+Annotation 
+AnnotationConfigApplicationContext
